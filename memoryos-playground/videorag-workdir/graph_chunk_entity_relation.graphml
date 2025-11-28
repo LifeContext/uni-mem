@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;A PAIR IN RED TRADITIONAL CLOTHING&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A couple wearing red traditional clothing shown in bed together, suggesting emotional entanglement between them."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;MAN IN SUIT&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A man wearing a suit standing in front of an ancient building, adding to the eerie atmosphere."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;CRYING GIRL&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A girl shown crying sadly in the video."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;PERSON HOLDING KNIFE&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A person holding a knife pointed at a blurry figure, foreshadowing impending danger."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;LONG-HAIRED WOMAN&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A long-haired woman shown in close-up with a melancholic expression."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;PERSON IN SHADOWS&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A person appearing in shadows in the nighttime outdoor environment."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;NO. 82 HAUNTED HOUSE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The haunted house referenced at the end of the video, serving as the central location and theme of the story."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;ANCIENT BUILDING&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"An ancient building where the man in suit is standing, contributing to the mysterious atmosphere."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;NIGHTTIME OUTDOOR ENVIRONMENT&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"An outdoor setting at night where someone appears in the shadows."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;EMOTIONAL ENTANGLEMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The emotional conflict and relationship issues between the couple in red traditional clothing."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;IMPENDING DANGER&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The threatening situation foreshadowed by the knife-wielding scene and the overall tense atmosphere."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;STORY COMMENTARY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Comments about the story displayed on a brick wall within the video."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;MYSTERIOUS LIGHT ORB&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A mysterious glowing ball of light that appears in the video, adding to the supernatural and eerie atmosphere."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;RED FLOWERS IN SMOKE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Red flowers appearing through swirling smoke, symbolizing an ominous sign or bad omen in the narrative."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;BRICK WALL&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A brick wall where subtitles with story commentary are displayed, serving as a textual element in the video."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;BEDROOM SCENE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The initial scene showing a couple in traditional red clothing in bed, establishing the emotional core of the story."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;BLURRY FIGURE&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"An unidentified blurry person being threatened with a knife, representing potential danger or conflict."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;VIDEO PRODUCTION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The overall video production that contains all these scenes and elements, organized around the haunted house theme."</data>
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+    </node>
+    <node id="&quot;ALL SCENES AND CHARACTERS&quot;">
+      <data key="d2">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d1">"The video production contains and organizes all the various scenes, characters, and events shown."</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <edge source="&quot;A PAIR IN RED TRADITIONAL CLOTHING&quot;" target="&quot;EMOTIONAL ENTANGLEMENT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The couple in red traditional clothing are directly involved in the emotional entanglement event shown in the video."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;A PAIR IN RED TRADITIONAL CLOTHING&quot;" target="&quot;BEDROOM SCENE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The bedroom scene is the specific setting where the couple in red clothing appears."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;MAN IN SUIT&quot;" target="&quot;ANCIENT BUILDING&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The man in suit is shown standing in front of the ancient building, establishing a strong location connection."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;CRYING GIRL&quot;" target="&quot;EMOTIONAL ENTANGLEMENT&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The crying girl's sadness likely relates to the emotional entanglement theme of the video."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;PERSON HOLDING KNIFE&quot;" target="&quot;IMPENDING DANGER&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The person holding the knife directly represents and contributes to the event of impending danger."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;PERSON HOLDING KNIFE&quot;" target="&quot;BLURRY FIGURE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The person holding the knife is directly threatening the blurry figure, creating a dangerous situation."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LONG-HAIRED WOMAN&quot;" target="&quot;NO. 82 HAUNTED HOUSE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The long-haired woman is part of the haunted house story, appearing in the same video context."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;PERSON IN SHADOWS&quot;" target="&quot;NIGHTTIME OUTDOOR ENVIRONMENT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The person appears specifically in the shadows of the nighttime outdoor environment."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;NO. 82 HAUNTED HOUSE&quot;" target="&quot;IMPENDING DANGER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The haunted house theme is directly connected to the sense of impending danger throughout the video."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;NO. 82 HAUNTED HOUSE&quot;" target="&quot;MYSTERIOUS LIGHT ORB&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The mysterious light orb contributes to the supernatural theme of the haunted house."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;NO. 82 HAUNTED HOUSE&quot;" target="&quot;VIDEO PRODUCTION&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The video production is organized around and features the '82 Haunted House' as its central theme."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMPENDING DANGER&quot;" target="&quot;RED FLOWERS IN SMOKE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The red flowers in smoke serve as a visual symbol of the impending danger theme."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;STORY COMMENTARY&quot;" target="&quot;BRICK WALL&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The brick wall is the physical location where the story commentary is displayed."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;VIDEO PRODUCTION&quot;" target="&quot;ALL SCENES AND CHARACTERS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The video production contains and organizes all the various scenes, characters, and events shown."</data>
+      <data key="d5">chunk-f5f2cfe491f4108a14fe88f4ac87746e</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

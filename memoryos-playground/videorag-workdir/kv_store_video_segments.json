@@ -1,0 +1,49 @@
+{
+  "f42906": {
+    "0": {
+      "content": "Caption:\n视频展示了一系列紧张而神秘的场景，从一对穿着红色传统服装的人在床上的对话开始，暗示了他们之间的情感纠葛。随后出现了一个神秘的光球，以及一位身穿西装的男子在古老建筑前站立，增添了诡异的氛围。画面切换到一个女孩悲伤地哭泣，然后是一个手持刀具指向模糊人物的特写镜头，预示着即将到来的危险。接着是烟雾缭绕中的红色花朵，象征着某种不祥之兆。之后是一面砖墙上的字幕，表达了对故事的评论，随后镜头转向夜晚的户外环境，有人在阴影中出现。最后，一位长发女子的特写展现了她的忧郁情绪，视频以“82号鬼屋”和“NO. 82 HAUNTED HOUSE”的字样结束，强调了恐怖主题。\nTranscript:\n[0.00s -> 2.00s]  If we're living in together,\n[2.00s -> 4.00s]  then we'll die together.\n[6.00s -> 8.00s]  Why have to choose this yonze?\n[8.00s -> 9.00s]  This is all right here.\n[9.00s -> 10.00s]  This is all right.\n[10.00s -> 11.00s]  This is all right.\n[11.00s -> 13.00s]  Let me.\n[13.00s -> 14.00s]  Don't!\n[14.00s -> 15.00s]  No!\n[15.00s -> 16.00s]  Ah!\n[19.00s -> 20.00s]  They're all who's trying to\n[20.00s -> 22.00s]  this house is now.\n[22.00s -> 23.00s]  Can't?\n[23.00s -> 24.00s]  Can't?\n[24.00s -> 25.00s]  Can you?\n[25.00s -> 28.00s]  Can you?\n[30.00s -> 30.36s]  Go.\n\n\n",
+      "time": "00:00-00:33",
+      "transcript": "[0.00s -> 2.00s]  If we're living in together,\n[2.00s -> 4.00s]  then we'll die together.\n[6.00s -> 8.00s]  Why have to choose this yonze?\n[8.00s -> 9.00s]  This is all right here.\n[9.00s -> 10.00s]  This is all right.\n[10.00s -> 11.00s]  This is all right.\n[11.00s -> 13.00s]  Let me.\n[13.00s -> 14.00s]  Don't!\n[14.00s -> 15.00s]  No!\n[15.00s -> 16.00s]  Ah!\n[19.00s -> 20.00s]  They're all who's trying to\n[20.00s -> 22.00s]  this house is now.\n[22.00s -> 23.00s]  Can't?\n[23.00s -> 24.00s]  Can't?\n[24.00s -> 25.00s]  Can you?\n[25.00s -> 28.00s]  Can you?\n[30.00s -> 30.36s]  Go.\n",
+      "frame_times": [
+        0.0,
+        2.75,
+        5.5,
+        8.25,
+        11.0,
+        13.75,
+        16.5,
+        19.25,
+        22.0,
+        24.75,
+        27.5,
+        30.25
+      ],
+      "duration_seconds": 33.0,
+      "metadata": {
+        "chunk_summary": "视频展示了一系列紧张而神秘的场景，从一对穿着红色传统服装的人在床上的对话开始，暗示了他们之间的情感纠葛。随后出现了一个神秘的光球，以及一位身穿西装的男子在古老建筑前站立，增添了诡异的氛围。画面切换到一个女孩悲伤地哭泣，然后是一个手持刀具指向模糊人物的特写镜头，预示着即将到来的危险。接着是烟雾缭绕中的红色花朵，象征着某种不祥之兆。之后是一面砖墙上的字幕，表达了对故事的评论，随后镜头转向夜晚的户外环境，有人在阴影中出现。最后，一位长发女子的特写展现了她的忧郁情绪，视频以“82号鬼屋”和“NO. 82 HAUNTED HOUSE”的字样结束，强调了恐怖主题。",
+        "scene_label": "haunted_house",
+        "objects_detected": [
+          "woman",
+          "man",
+          "traditional_clothing",
+          "light_ball",
+          "suit_man",
+          "red_flower",
+          "brick_wall",
+          "night_outdoor"
+        ],
+        "actions": "talking, crying, holding knife, appearing in shadows, expressing sadness",
+        "emotions": "sadness, mystery, tension",
+        "confidence": 0.95,
+        "notes": "视频通过不同场景的快速切换，营造出一种紧张和不安的氛围。",
+        "language": "en",
+        "source_type": "video",
+        "chunk_index": 0,
+        "chunk_count_estimate": 1,
+        "duration_seconds": 33.0,
+        "time_range": "00:00-00:33",
+        "transcription_model": "faster-distil-whisper-large-v3"
+      }
+    }
+  }
+}

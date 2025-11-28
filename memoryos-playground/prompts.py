@@ -231,3 +231,47 @@ META_INFO_USER_PROMPT = ("""Update the conversation meta-summary by incorporatin
     {new_dialogue}
 
     Updated Meta-summary:""") 
+
+# Prompt for video structured caption generation (from videorag/_videoutil/caption.py)
+VIDEO_STRUCTURED_CAPTION_PROMPT = """You are an expert video analyst. Analyze the video frames and transcript, then output ONLY a valid JSON object.
+
+IMPORTANT: The chunk_summary field MUST be a plain Chinese text string. It is NOT a JSON object, NOT a nested structure, NOT an array. It is just plain text.
+
+Output format:
+{{
+  "chunk_summary": "这里写纯文本中文描述，200-300字，直接描述视频内容，不要用任何JSON格式。例如：视频中，一位身着黄色连衣裙的女子背对着镜头，站在海边的沙滩上。她的右手高举，手中似乎握着食物，吸引着空中的海鸥。背景中，蓝色的海洋泛起层层白色浪花，远处矗立着一座轮廓清晰的山脉。",
+  "scene_label": "beach_feeding_gulls",
+  "objects_detected": ["woman", "seagull", "ocean"],
+  "actions": "holding food, raising hand, attracting seagulls",
+  "emotions": "peaceful, serene",
+  "confidence": 0.92,
+  "notes": "镜头从女子背后拍摄"
+}}
+
+CRITICAL RULE FOR chunk_summary:
+- chunk_summary is a STRING value, not a JSON object
+- Write ONE continuous paragraph in Chinese describing the entire video
+- Do NOT use JSON format inside chunk_summary
+- Do NOT use frame-by-frame descriptions
+- Do NOT use nested structures like {{"frame1": ...}}
+- Do NOT use Chinese keys like "视频标题" or "画面细节"
+
+CORRECT chunk_summary (this is what you should output):
+"chunk_summary": "视频中，一位身着黄色连衣裙的女子背对着镜头，站在海边的沙滩上。她的头发自然垂落，发梢微卷，左手腕佩戴着一块白色表盘的手表。女子的右手高举，手中似乎握着食物，吸引着空中的海鸥。背景中，蓝色的海洋泛起层层白色浪花，远处矗立着一座轮廓清晰的山脉，天空晴朗湛蓝，营造出一种宁静而开阔的氛围。起初，一只海鸥从左侧飞向女子的手，随后更多的海鸥从不同方向飞至，它们在空中盘旋、俯冲，似乎在争抢食物。整个场景充满了自然的活力，海鸥的动态与女子的静态形成鲜明对比。"
+
+WRONG chunk_summary (DO NOT output like this):
+"chunk_summary": "{{"frame1": {{"description": "..."}}}}"
+"chunk_summary": "{{"description": "...", "frames": [...]}}"
+
+Remember: chunk_summary is just a text string, like a paragraph you would write in a book. It is NOT a JSON object.
+
+Other rules:
+- ALL field keys must be in English
+- Do NOT include "language" field
+- actions must be a string (comma-separated English phrases)
+- objects_detected must be an array of English words/phrases
+
+Output ONLY the JSON object, no explanations, no markdown, no code blocks.
+Time range: {start:.2f}s - {end:.2f}s
+Transcript: {transcript}
+"""

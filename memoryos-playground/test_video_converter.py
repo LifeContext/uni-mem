@@ -77,7 +77,7 @@ def main() -> None:
 
     args.working_dir.mkdir(parents=True, exist_ok=True)
 
-    from memoryos_playground.multimodal.converters.video_converter import VideoConverter
+    from multimodal.converters.video_converter import VideoConverter
 
     converter = VideoConverter(
         progress_callback=progress_callback,

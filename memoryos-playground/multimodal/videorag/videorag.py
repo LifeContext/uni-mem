@@ -124,8 +124,8 @@ class VideoRAG:
     def load_caption_model(self, debug=False):
         # caption model
         if not debug:
-            self.caption_model = AutoModel.from_pretrained('./MiniCPM-V-2_6', trust_remote_code=True,torch_dtype=torch.float16,device_map="cuda")
-            self.caption_tokenizer = AutoTokenizer.from_pretrained('./MiniCPM-V-2_6', trust_remote_code=True,torch_dtype=torch.float16,device_map="cuda")
+            self.caption_model = AutoModel.from_pretrained('/root/models/MiniCPM-V-2_6', trust_remote_code=True,torch_dtype=torch.float16,device_map="cuda")
+            self.caption_tokenizer = AutoTokenizer.from_pretrained('/root/models/MiniCPM-V-2_6', trust_remote_code=True,torch_dtype=torch.float16,device_map="cuda")
             self.caption_model.eval()
         else:
             self.caption_model = None

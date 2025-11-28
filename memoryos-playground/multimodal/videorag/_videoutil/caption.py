@@ -10,7 +10,7 @@ from moviepy.video.io.VideoFileClip import VideoFileClip
 
 # Import prompt from centralized prompts file
 try:
-    from memoryos_playground.prompts import VIDEO_STRUCTURED_CAPTION_PROMPT
+    from prompts import VIDEO_STRUCTURED_CAPTION_PROMPT
     STRUCTURED_PROMPT_TEMPLATE = VIDEO_STRUCTURED_CAPTION_PROMPT
 except ImportError:
     # Fallback if import fails
@@ -96,8 +96,8 @@ def _ensure_metadata_defaults(metadata: dict, fallback_summary: str) -> dict:
 
 def segment_caption(video_name, video_path, segment_index2name, transcripts, segment_times_info, caption_result, error_queue):
     try:
-        model = AutoModel.from_pretrained('./MiniCPM-V-2_6-int4', trust_remote_code=True)
-        tokenizer = AutoTokenizer.from_pretrained('./MiniCPM-V-2_6-int4', trust_remote_code=True)
+        model = AutoModel.from_pretrained('/root/models/MiniCPM-V-2_6-int4', trust_remote_code=True)
+        tokenizer = AutoTokenizer.from_pretrained('/root/models/MiniCPM-V-2_6-int4', trust_remote_code=True)
         model.eval()
         
         with VideoFileClip(video_path) as video:
@@ -121,7 +121,25 @@ def segment_caption(video_name, video_path, segment_index2name, transcripts, seg
                     tokenizer=tokenizer,
                     **params
                 )
+                # Debug: 打印实际发送的 prompt 和 LLM 的原始响应
+                if index == 0:  # 只打印第一个 segment 的调试信息
+                    print("=" * 80)
+                    print("DEBUG: Actual prompt sent to LLM (last 500 chars):")
+                    print(query[-500:])
+                    print("=" * 80)
+                    print("DEBUG: LLM raw response (first 1000 chars):")
+                    print(segment_caption[:1000])
+                    print("=" * 80)
                 raw_text, parsed_metadata = _extract_json_from_response(segment_caption)
+                # Debug: 打印解析后的 metadata
+                if index == 0:
+                    print("DEBUG: Parsed metadata chunk_summary type:", type(parsed_metadata.get("chunk_summary")))
+                    if "chunk_summary" in parsed_metadata:
+                        chunk_summary_value = parsed_metadata["chunk_summary"]
+                        print("DEBUG: chunk_summary value (first 200 chars):", str(chunk_summary_value)[:200])
+                        if isinstance(chunk_summary_value, str) and chunk_summary_value.strip().startswith("{"):
+                            print("DEBUG: WARNING! chunk_summary is a JSON string!")
+                    print("=" * 80)
                 normalized_metadata = _ensure_metadata_defaults(parsed_metadata, raw_text)
                 caption_result[index] = {
                     "raw": normalized_metadata["chunk_summary"],

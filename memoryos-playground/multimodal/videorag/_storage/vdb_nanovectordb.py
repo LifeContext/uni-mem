@@ -91,7 +91,11 @@ class NanoVectorDBVideoSegmentStorage(BaseVectorStorage):
         )
     
     async def upsert(self, video_name, segment_index2name, video_output_format):
-        embedder = imagebind_model.imagebind_huge(pretrained=True).cuda()
+        # 使用本地模型文件，不重新下载
+        model_path = "/root/models/imagebind_huge.pth"
+        embedder = imagebind_model.imagebind_huge(pretrained=False).cuda()
+        state_dict = torch.load(model_path, map_location="cuda")
+        embedder.load_state_dict(state_dict)
         embedder.eval()
         
         logger.info(f"Inserting {len(segment_index2name)} segments to {self.namespace}")
@@ -126,7 +130,11 @@ class NanoVectorDBVideoSegmentStorage(BaseVectorStorage):
         return results
     
     async def query(self, query: str):
-        embedder = imagebind_model.imagebind_huge(pretrained=True).cuda()
+        # 使用本地模型文件，不重新下载
+        model_path = "/root/models/imagebind_huge.pth"
+        embedder = imagebind_model.imagebind_huge(pretrained=False).cuda()
+        state_dict = torch.load(model_path, map_location="cuda")
+        embedder.load_state_dict(state_dict)
         embedder.eval()
         
         embedding = encode_string_query(query, embedder)
