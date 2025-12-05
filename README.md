@@ -56,7 +56,7 @@ We are not building a static database; we are building **Native Spatio-Temporal 
 MemContext draws inspiration from human cognitive processes and OS storage structures, adopting a tiered storage architecture paired with a dual-path retrieval engine.
 
 <div align="center">
-  <img src="docs/MemContext_Workflow_v0.png" alt="MemContext Architecture Workflow" width="100%">
+  <img src="MemContext_Workflow_v0.png" alt="MemContext Architecture Workflow" width="100%">
 </div>
 
 ### 🧠 Memory Lifecycle

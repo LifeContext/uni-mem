@@ -11,7 +11,7 @@
 
 *存万物 · 查万物 · 帧级定位*
 
-[English](#-english-version) • [核心特性](#-核心特性) • [架构设计](#-架构设计) • [应用场景](#-应用场景)
+[English](README.md) • [核心特性](#-核心特性) • [架构设计](#-架构设计) • [应用场景](#-应用场景)
 
 </div>
 
@@ -56,7 +56,7 @@ MemContext是**多模态原生 (Multi-modal Native)** 的记忆框架，旨在�
 MemContext 借鉴了人类大脑的认知过程以及操作系统的存储结构，采用了分层存储架构配合双路检索引擎。
 
 <div align="center">
-  <img src="docs/MemContext_Workflow_v0.png" alt="MemContext Architecture Workflow" width="100%">
+  <img src="MemContext_Workflow_v0.png" alt="MemContext Architecture Workflow" width="100%">
 </div>
 
 ### 🧠 记忆生命周期
